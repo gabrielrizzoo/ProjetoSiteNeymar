@@ -1,5 +1,4 @@
-
-window.sr = ScrollReveal({ reset: true})
+window.sr = ScrollReveal({ reset: true });
 
 sr.reveal('.area-1', { duration: 1000 });
 
@@ -13,10 +12,8 @@ sr.reveal('.area-3', {
     duration: 2000
 });
 
-
-
-function mudarPagina(pagina) {
-    location.href = pagina 
-}
-
-
+sr.reveal('.sr-texto', { 
+    duration: 1500, 
+    origin: 'bottom', 
+    distance: '30px' 
+});

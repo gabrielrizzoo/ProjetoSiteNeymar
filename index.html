@@ -1,40 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style1.css" />
-    <link rel="shortcut icon" href="img/favicon/faviconCBF2.png" type="image/x-icon">
-    <title>NeymarJr-Apresentação</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Neymar Jr - Apresentação</title>
 </head>
-
 <body>
+
+    <header class="navbar">
+        <nav class="nav-links">
+            <a href="index.html" class="active">Apresentação</a>
+            <a href="./Novidades/novidades.html">Novidades</a>
+            <a href="./Portifolio/portifolio.html">Portefólio</a>
+            <a href="./Detalhes/detalhes.html">Detalhes</a>
+            <a href="./Contato/contato.html">Contato</a>
+        </nav>
+    </header>
 
     <div class="geral">
         <main>
-
-            
-            
             <section class="modulo parallax parallax-1">
-                <h1 class="area-1">Neymar jr</h1>
-                
+                <h1 class="area-1">Neymar Jr</h1>
             </section>
             
             <section class="modulo conteudo">
                 <div class="container">
-                    <nav>
-                        <button class="botaoPagina" id="pagina1" onclick="mudarPagina('index.html')">Apresentação</button>
-                        <button class="botaoPagina" id="pagina2" onclick="mudarPagina('./Novidades/novidades.html')">Novidades</button>
-                        <button class="botaoPagina" id="pagina3" onclick="mudarPagina('./Portifolio/portifolio.html')">Portifólio</button>
-                        <button class="botaoPagina" id="pagina4" onclick="mudarPagina('./Detalhes/detalhes.html')">Detalhes</button>
-                        <button class="botaoPagina" id="pagina5" onclick="mudarPagina('./Contato/contato.html')">Contato</button>
-                    </nav>
-                    <h2>Quem é Neymar da Silva Santos Júnior? </h2>
-                    <p>
+                    <h2 class="sr-texto">Quem é Neymar da Silva Santos Júnior?</h2>
+                    <p class="sr-texto">
                         Neymar da Silva Santos Júnior é um jogador de futebol brasileiro que atua como atacante.
                         Atualmente joga pelo Paris Saint-Germain e pela Seleção Brasileira. É considerado o principal
                         futebolista brasileiro da atualidade e um dos melhores futebolistas do mundo.
@@ -43,19 +38,19 @@
             </section>
 
             <section class="modulo parallax parallax-2">
-                <h1 class="area-2">sua mudança</h1>
+                <h1 class="area-2">Sua mudança</h1>
             </section>
 
             <section class="modulo conteudo">
                 <div class="container">
-                    <h2>Vivência de Neymar após entrar no futebol</h2>
-                    <p>
+                    <h2 class="sr-texto">Vivência de Neymar após entrar no futebol</h2>
+                    <p class="sr-texto">
                         Filho do mecânico Neymar da Silva Santos (de quem herdou o nome) e Nadine Santos, Neymar nasceu
                         na cidade de Mogi das Cruzes, na Região Metropolitana de São Paulo, em 5 de fevereiro de 1992,
                         mas ainda muito jovem mudou-se a São Vicente e em seguida a Santos. Em 2003, aos 11 anos de
                         idade, chegou às categorias de base do Santos, donde não saiu mais até tornar-se
-                        profissional.Para vizualizar mais informações sobre a carreira do astro do futebol Neymar
-                        Jr,clique <a class="botaoCurriculo2" href="Novidades/novidades.html">aqui</a>
+                        profissional. Para visualizar mais informações sobre a carreira do astro do futebol Neymar
+                        Jr, clique <a class="link-destaque" href="Novidades/novidades.html">aqui</a>.
                     </p>
                 </div>
             </section>
@@ -65,37 +60,34 @@
             </section>
 
             <section class="modulo conteudo">
-                <divc class="container">
-                    <h2 id="ultimoTitulo">Vida pessoal de Neymar Jr</h2>
-                    <div class="ultimaParte">
-                        <p id="ultimoTexto">
-                            No dia 8 de maio de 2011, horas antes da final do Campeonato Paulista daquele ano contra o
-                            Corinthians, Neymar foi informado que seria pai de um filho com uma garota de dezessete
-                            anos.
-                            Quatro dias depois, em 12 de maio, a notícia tornou-se oficial através de seu site oficial,
-                            confirmando que o jogador seria pai pela primeira vez aos dezenove anos de idade. O nome da
-                            mãe
-                            inicialmente não foi divulgado para que se pudesse preservar a imagem, tanto dela, quanto da
-                            criança. Dezesseis dias depois de ter o conhecimento da gravidez, na véspera da semifinal da
-                            Copa Libertadores, a mãe da criança informou-lhe que o bebê seria do sexo masculino. Em 24
-                            de
-                            agosto de 2011, às onze horas da manhã, ocorreu o nascimento de Davi Lucca, na cidade de São
-                            Paulo. Apesar do nascimento do seu primeiro filho, Neymar jamais chegou a manter um
-                            relacionamento estável com Carolina Dantas, a mãe do bebê, que posteriormente teve seu nome
-                            divulgado para a mídia. Tem um acordo verbal com Carolina e paga trinta mil reais por mês de
-                            pensão, além de ter concedido uma cobertura de cinco dormitórios para que mãe e filho
-                            morassem.
-                            Entre 2008 e 2009, Neymar e sua família moraram neste mesmo apartamento, na época em que o
-                            atleta iniciava sua carreira profissional no Santos.
-                        </p>
-                        <img id="ultimaImagem" src="img/apresentacao/daviluucasNEYMAR.jpg" alt="">
+                <div class="container">
+                    <h2 id="ultimoTitulo" class="sr-texto">Vida pessoal de Neymar Jr</h2>
+                    <div class="ultimaParte sr-texto">
+                        
+                        <div class="card-texto">
+                            <p id="ultimoTexto">
+                                No dia 8 de maio de 2011, horas antes da final do Campeonato Paulista daquele ano contra o
+                                Corinthians, Neymar foi informado que seria pai de um filho com uma garota de dezessete anos.
+                                Quatro dias depois, em 12 de maio, a notícia tornou-se oficial através de seu site oficial,
+                                confirmando que o jogador seria pai pela primeira vez aos dezenove anos de idade. O nome da mãe
+                                inicialmente não foi divulgado para que se pudesse preservar a imagem, tanto dela, quanto da
+                                criança. Dezesseis dias depois de ter o conhecimento da gravidez, na véspera da semifinal da
+                                Copa Libertadores, a mãe da criança informou-lhe que o bebê seria do sexo masculino. Em 24 de
+                                agosto de 2011, às onze horas da manhã, ocorreu o nascimento de Davi Lucca, na cidade de São
+                                Paulo.
+                            </p>
+                        </div>
+
+                        <div class="imagem-wrapper">
+                            <img id="ultimaImagem" src="img/apresentacao/daviluucasNEYMAR.jpg" alt="Davi Lucca e Neymar">
+                        </div>
+
                     </div>
+                </div>
+            </section>
+        </main>
     </div>
-    </section>
 
-    </main>
-    </div>
-    <script src="script/script.js"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>

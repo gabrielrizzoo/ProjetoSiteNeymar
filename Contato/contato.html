@@ -1,62 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <link rel="stylesheet" href="contato.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style1.css" />
     <link rel="shortcut icon" href="img/favicon/faviconCBF2.png" type="image/x-icon">
-    <title>Contato</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Contacto - Neymar Jr</title>
 </head>
-
 <body>
+
+    <header class="navbar">
+        <nav class="nav-links">
+            <a href="../index.html">Apresentação</a>
+            <a href="../Novidades/novidades.html">Novidades</a>
+            <a href="../Portifolio/portifolio.html">Portefólio</a>
+            <a href="../Detalhes/detalhes.html">Detalhes</a>
+            <a href="contato.html" class="active">Contato</a>
+        </nav>
+    </header>
 
     <div class="geral">
         <main>
 
-
-
-            <section class="modulo parallax parallax-1">
+            <section class="modulo parallax" style="background-image: url('../img/contato/img-1.jpg');">
                 <h1 class="area-1">Contato</h1>
-
             </section>
 
             <section class="modulo conteudo">
                 <div class="container">
-                    <nav>
-                        <button class="botaoPagina" id="pagina1"
-                            onclick="mudarPagina('../index.html')">Apresentação</button>
-                        <button class="botaoPagina" id="pagina2"
-                            onclick="mudarPagina('../Novidades/novidades.html')">Novidades</button>
-                        <button class="botaoPagina" id="pagina3"
-                            onclick="mudarPagina('../Portifolio/portifolio.html')">Portifólio</button>
-                        <button class="botaoPagina" id="pagina4" onclick="mudarPagina('../Detalhes/detalhes.html')">Detalhes</button>
-                        <button class="botaoPagina" id="pagina5" onclick="mudarPagina('contato.html')">Contato</button>
-                    </nav>
-                    <h2> Redes sociais para contato </h2>
-                    <section class="redes">
-                        <a href="https://www.instagram.com/neymarjr/" class="paginasRedes" id="instagram">Instagram</a>
-                        <a href="https://www.youtube.com/user/neymarjr" class="paginasRedes" id="youtube">YouTube</a>
-                        <a href="https://www.twitch.tv/neymarjr" class="paginasRedes" id="twitch">Twitch</a>
-                        <a href="https://steamcommunity.com/profiles/76561198355549311" class="paginasRedes"
-                            id="steam">Steam</a>
-                        <a href="https://twitter.com/neymarjr" class="paginasRedes" id="twitter">Twitter</a>
-                    </section>
+                    <h2 class="sr-texto">Redes sociais para contacto</h2>
+                    
+                    <div class="card-texto sr-texto">
+                        <p>Acompanhe o dia a dia, novidades, transmissões e anúncios oficiais do Neymar Jr. através das plataformas abaixo:</p>
+                        
+                        <div class="redes-sociais">
+                            <a href="https://www.instagram.com/neymarjr/" target="_blank" class="social-btn">Instagram</a>
+                            <a href="https://www.youtube.com/user/neymarjr" target="_blank" class="social-btn">YouTube</a>
+                            <a href="https://www.twitch.tv/neymarjr" target="_blank" class="social-btn">Twitch</a>
+                            <a href="https://steamcommunity.com/profiles/76561198355549311" target="_blank" class="social-btn">Steam</a>
+                            <a href="https://twitter.com/neymarjr" target="_blank" class="social-btn">Twitter</a>
+                        </div>
+                    </div>
                 </div>
             </section>
 
-            <section class="modulo parallax parallax-2"></section>
+            <section class="modulo parallax" style="background-image: url('../img/contato/img-3.jpg');">
+                <h1 class="area-2"></h1>
+            </section>
 
-
+        </main>
     </div>
-    </section>
 
-    </main>
-    </div>
     <script src="../script/script.js"></script>
 </body>
-
 </html>

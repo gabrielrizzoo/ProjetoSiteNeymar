@@ -1,205 +1,294 @@
-/* fonte */
-
-@import url('https://fonts.googleapis.com/css2?family=Changa+One&family=Merriweather+Sans&display=swap');
-
-
-
-/* PÁGINA 1 */
+/* --- RESET E DESIGN SYSTEM BÁSICO --- */
 * {
-    font-family: 'Merriweather Sans', serif;
-    text-align: justify;
-}
-
-.paginas {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    z-index: 3;
-}
-
-body{
     margin: 0;
-    padding-top: 0;
-    color: #fff;
-    font-family: sans-serif;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    font-size: 22px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-nav {
+:root {
+    --bg-color: #050a15;       /* Fundo escuro profundo */
+    --accent-gold: #C5A059;    /* Dourado Premium */
+    --text-primary: #f8fafc;   /* Branco gelo para leitura */
+    --text-secondary: #94a3b8; /* Cinza claro */
+    --btn-bg-hover: rgba(197, 160, 89, 0.1);
+    --ease-transition: all 0.3s ease;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    line-height: 1.6;
+    font-size: 18px; 
+}
+
+/* --- NAVBAR (Menu Fixo) --- */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(5, 10, 21, 0.9); 
+    backdrop-filter: blur(10px); 
+    padding: 15px 0;
+    z-index: 100;
     display: flex;
+    justify-content: center;
 }
 
-
-.botaoPagina {
-    background-color: #FFD700;
-    color: 	#00008B;
-    border: 10px;
-    max-width: 100%;
-    border-width: 0;
-    border-radius: 10px;
-    padding: 5px;
-    padding-right: 85px;
-    transition: 0.7s;
-    padding-left: 0;
-    font-size: 20px;
+.nav-links {
+    display: flex;
+    gap: 15px;
 }
 
-.botaoPagina:hover {
-    border-width: 5px solid blue;
-    padding-right: 55px;
-    padding-left: 30px;
-    padding-bottom: 5px;
-    padding-top: 5px;
-    font-size: 25px;
-    text-decoration: underline;
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-primary);
+    padding: 10px 22px;
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 2px solid transparent; 
+    border-radius: 50px;
+    transition: var(--ease-transition);
 }
 
+.nav-links a:hover, .nav-links a.active {
+    color: var(--accent-gold);
+    background-color: var(--btn-bg-hover);
+    border-color: var(--accent-gold);
+    transform: translateY(-2px);
+}
 
+/* --- ESTRUTURA DOS CONTEÚDOS E PARALLAX --- */
+.geral {
+    width: 100%;
+}
 
-
-h1,h2,h3,h4,h5,h6{
-    font-weight: 900;
-    color: #000;
+.container {
+    width: 100%;
+    max-width: 900px; 
+    margin: 0 auto;
+    padding: 0 30px;
 }
 
 h2 {
-    color: green;
-    text-decoration: underline;
-    margin-top: 40px;
+    color: var(--accent-gold); 
+    margin-bottom: 25px;
+    font-size: 32px;
+    font-weight: 700;
 }
 
-.botaoCurriculo2 {
-    background-color: #FFD700;
+section.modulo p {
+    color: var(--text-secondary); 
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+section.modulo.conteudo {
+    padding: 100px 0;
+    background: var(--bg-color); 
+}
+
+.link-destaque {
+    color: var(--accent-gold);
     text-decoration: none;
-    border-radius: 10px;
-    color: green;
     font-weight: bold;
-    transition: 0.5s;
+    transition: var(--ease-transition);
 }
 
-.botaoCurriculo2:hover {
+.link-destaque:hover {
+    color: #fff;
     text-decoration: underline;
-    font-size: 20px;
-    color: rgb(11, 77, 11);
 }
 
-.geral{
-    width: 100%;
-    margin: 0 auto;
-}
-
-main{
-    display: block;
-    background-color: #fff;
-}
-
-.container{
-    width: 100%;
-    max-width: 760px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
+/* --- SESSÃO FINAL (FOTO E TEXTO) --- */
 .ultimaParte {
     display: flex;
-}
-
-#ultimaImagem {
-    max-height: 90%;
-    height: 20%;
-    border-bottom: 2px solid rgb(224, 224, 36);
-    border-radius: 15px;
-    margin-top: 25px;
-    margin-right: 150px;
+    gap: 40px; 
+    align-items: flex-start;
 }
 
 #ultimoTexto {
-    padding-left: 10px;
-    padding-right: 250px;
-    max-width: 50%;
-    font-size: 22px;
-    justify-content: start;
+    flex: 1; 
+    padding: 0;
+    max-width: 100%;
 }
 
-#ultimoTitulo {
-    padding-left: 10px;
-}
-
-section.modulo p{
-    margin-bottom: 40px;
-}
-
-section.modulo:last-child{
-    margin-bottom: 0;
-}
-
-section.modulo h2{
-    margin-bottom: 40px;
-    font-size: 30px;
-}
-
-section.modulo.conteudo{
-    padding: 40px 0;
-    background: #FFD700;
-}
-
-section.modulo.parallax{
+/* --- EFEITO PARALLAX --- */
+section.modulo.parallax {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh !important;
+    height: 100vh;
     width: 100%;
     position: relative;
-    overflow: hidden;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
 }
 
-section.modulo.parallax:after{
+section.modulo.parallax:after {
     content: "";
     height: 100%;
     width: 100%;
     position: absolute;
-    z-index: 8;
-    background: -moz-linear-gradient(to bottom, rgba(0,0,255,0) 0, rgba(0,0,255,0) 40%, blue 150%);
-    background: -webkit-linear-gradient(to bottom, rgba(0,0,255,0) 0, rgba(0,0,255,0) 40%, blue 150%);
-    background: linear-gradient(to bottom, rgba(0,0,255,0) 0, rgba(0,0,255,0) 40%, blue 150%);
+    z-index: 1;
+    background: linear-gradient(to bottom, rgba(5,10,21,0.2) 0%, rgba(5,10,21,1) 100%);
 }
 
-
-
-section.modulo.parallax h1{
+section.modulo.parallax h1 {
     color: #fff;
     text-align: center;
     font-size: 78px;
-    z-index: 50;
+    font-weight: 800;
+    z-index: 2; 
     text-transform: uppercase;
+    text-shadow: 0 5px 15px rgba(0,0,0,0.8);
 }
 
+/* As regras de visibility: hidden; foram removidas daqui! */
 
-.area-1, .area-2, .area-3{
-    visibility: hidden;
+section.modulo.parallax-1 { background-image: url("img/detalhes/image1-Detalhes.png"); }
+section.modulo.parallax-2 { background-image: url("img/detalhes/image2-Detalhes.png"); }
+section.modulo.parallax-3 { background-image: url("img/detalhes/image3-Detalhes.png"); }
+
+/* =========================================================
+   UI/UX AVANÇADO: MICROINTERAÇÕES E RESPONSIVIDADE
+   ========================================================= */
+
+/* --- 1. SCROLLBAR CUSTOMIZADA --- */
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    background: var(--bg-color); 
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(197, 160, 89, 0.5); 
+    border-radius: 10px;
+    border: 3px solid var(--bg-color); 
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-gold); 
 }
 
-/* IMAGENS */
+/* --- 2. HIERARQUIA: CARDS DE TEXTO --- */
+.card-texto {
+    background: rgba(255, 255, 255, 0.02); 
+    border: 1px solid rgba(197, 160, 89, 0.15); 
+    padding: 35px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px); 
+    transition: var(--ease-transition);
+    flex: 1; 
+}
+.card-texto:hover {
+    border-color: rgba(197, 160, 89, 0.4);
+    transform: translateY(-5px); 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
 
+/* --- 3. MICROINTERAÇÃO: ZOOM NA IMAGEM --- */
+.imagem-wrapper {
+    overflow: hidden; 
+    border-radius: 15px;
+    border-bottom: 4px solid var(--accent-gold);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    width: 350px;
+    flex-shrink: 0; 
+}
 
+#ultimaImagem {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: none; 
+    box-shadow: none;
+    transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94); 
+}
 
-    section.modulo.parallax-1{
-        background-image: url("img/detalhes/image1-Detalhes.png");
+.imagem-wrapper:hover #ultimaImagem {
+    transform: scale(1.08); 
+}
+
+/* --- 4. BOTÕES REDES SOCIAIS (Página de Contato) --- */
+.redes-sociais {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.social-btn {
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: var(--text-primary);
+    border: 1px solid var(--accent-gold);
+    transition: var(--ease-transition);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+}
+
+.social-btn:hover {
+    background: var(--accent-gold);
+    color: var(--bg-color);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(197, 160, 89, 0.3);
+}
+
+/* --- 5. RESPONSIVIDADE (Para Ecrãs de Telemóveis e Tablets) --- */
+@media (max-width: 800px) {
+    .hero-section .main-title { 
+        font-size: 3.5rem; 
     }
     
-    section.modulo.parallax-2{
-        background-image: url("img/detalhes/image2-Detalhes.png");
+    .navbar { 
+        padding: 10px 0; 
     }
     
-    section.modulo.parallax-3{
-        background-image: url("img/detalhes/image3-Detalhes.png");
+    .nav-links { 
+        flex-wrap: wrap; 
+        justify-content: center; 
+        gap: 8px; 
     }
+    
+    .nav-links a { 
+        padding: 6px 12px; 
+        font-size: 0.75rem; 
+    }
+    
+    .ultimaParte {
+        flex-direction: column; 
+        align-items: center;
+        gap: 30px;
+    }
+    
+    .imagem-wrapper {
+        width: 100%; 
+        max-width: 400px;
+    }
+    
+    h2 { 
+        font-size: 26px; 
+        text-align: center; 
+    }
+    
+    .card-texto {
+        padding: 20px;
+    }
+    
+    /* Centraliza os botões das redes sociais no celular */
+    .redes-sociais {
+        justify-content: center;
+    }
+    
+    .social-btn {
+        font-size: 0.8rem;
+        padding: 10px 20px;
+    }
+}
