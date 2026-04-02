@@ -3,67 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <meta name="description" content="Neymar Jr — Site oficial de apresentação, carreira, conquistas e vida pessoal do craque brasileiro.">
     <link rel="stylesheet" href="style1.css" />
     <script src="https://unpkg.com/scrollreveal"></script>
-    <title>Neymar Jr - Apresentação</title>
+    <title>Neymar Jr — O Craque Brasileiro</title>
 </head>
-<body>
+<body class="page-enter">
 
-    <header class="navbar">
-        <nav class="nav-links">
-            <a href="index.html" class="active">Apresentação</a>
-            <a href="./Novidades/novidades.html">Novidades</a>
-            <a href="./Portifolio/portifolio.html">Portefólio</a>
-            <a href="./Detalhes/detalhes.html">Detalhes</a>
-            <a href="./Contato/contato.html">Contato</a>
-        </nav>
+    <!-- === NAVBAR === -->
+    <header class="navbar" id="navbar">
+        <div class="navbar-inner">
+            <a href="index.html" class="nav-logo">
+                NJR<span class="logo-accent">.</span>
+            </a>
+            <div class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+                <span></span><span></span><span></span>
+            </div>
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html" class="active">Apresentação</a>
+                <a href="./Novidades/novidades.html">Novidades</a>
+                <a href="./Portifolio/portifolio.html">Portfólio</a>
+                <a href="./Detalhes/detalhes.html">Detalhes</a>
+                <a href="./Contato/contato.html">Contato</a>
+            </nav>
+        </div>
     </header>
 
+    <!-- === MAIN CONTENT === -->
     <div class="geral">
         <main>
-            <section class="modulo parallax parallax-1">
+
+            <!-- HERO SECTION -->
+            <section class="modulo parallax parallax-1" id="hero">
+                <div class="particles">
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                </div>
+                <span class="page-badge">⚽ Bem-vindo</span>
                 <h1 class="area-1">Neymar Jr</h1>
+                <div class="scroll-indicator">
+                    <span>Scroll</span>
+                    <div class="arrow"></div>
+                </div>
             </section>
-            
+
+            <!-- STATS BAR -->
+            <section class="modulo conteudo">
+                <div class="stats-bar">
+                    <div class="stat-item sr-texto">
+                        <span class="stat-number">77</span>
+                        <span class="stat-label">Gols pela Seleção</span>
+                    </div>
+                    <div class="stat-item sr-texto">
+                        <span class="stat-number">400+</span>
+                        <span class="stat-label">Gols na Carreira</span>
+                    </div>
+                    <div class="stat-item sr-texto">
+                        <span class="stat-number">30+</span>
+                        <span class="stat-label">Títulos</span>
+                    </div>
+                    <div class="stat-item sr-texto">
+                        <span class="stat-number">200M+</span>
+                        <span class="stat-label">Seguidores</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SOBRE -->
             <section class="modulo conteudo">
                 <div class="container">
                     <h2 class="sr-texto">Quem é Neymar da Silva Santos Júnior?</h2>
-                    <p class="sr-texto">
-                        Neymar da Silva Santos Júnior é um jogador de futebol brasileiro que atua como atacante.
-                        Atualmente joga pelo Paris Saint-Germain e pela Seleção Brasileira. É considerado o principal
-                        futebolista brasileiro da atualidade e um dos melhores futebolistas do mundo.
-                    </p>
+                    <div class="card-texto sr-texto">
+                        <p>
+                            Neymar da Silva Santos Júnior é um jogador de futebol brasileiro que atua como atacante.
+                            Atualmente joga pelo Paris Saint-Germain e pela Seleção Brasileira. É considerado o principal
+                            futebolista brasileiro da atualidade e um dos melhores futebolistas do mundo.
+                        </p>
+                    </div>
                 </div>
             </section>
 
+            <!-- PARALLAX 2 -->
             <section class="modulo parallax parallax-2">
+                <div class="particles">
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                </div>
                 <h1 class="area-2">Sua mudança</h1>
             </section>
 
+            <!-- VIVÊNCIA -->
             <section class="modulo conteudo">
                 <div class="container">
                     <h2 class="sr-texto">Vivência de Neymar após entrar no futebol</h2>
-                    <p class="sr-texto">
-                        Filho do mecânico Neymar da Silva Santos (de quem herdou o nome) e Nadine Santos, Neymar nasceu
-                        na cidade de Mogi das Cruzes, na Região Metropolitana de São Paulo, em 5 de fevereiro de 1992,
-                        mas ainda muito jovem mudou-se a São Vicente e em seguida a Santos. Em 2003, aos 11 anos de
-                        idade, chegou às categorias de base do Santos, donde não saiu mais até tornar-se
-                        profissional. Para visualizar mais informações sobre a carreira do astro do futebol Neymar
-                        Jr, clique <a class="link-destaque" href="Novidades/novidades.html">aqui</a>.
-                    </p>
+                    <div class="card-texto sr-texto">
+                        <p>
+                            Filho do mecânico Neymar da Silva Santos (de quem herdou o nome) e Nadine Santos, Neymar nasceu
+                            na cidade de Mogi das Cruzes, na Região Metropolitana de São Paulo, em 5 de fevereiro de 1992,
+                            mas ainda muito jovem mudou-se a São Vicente e em seguida a Santos. Em 2003, aos 11 anos de
+                            idade, chegou às categorias de base do Santos, donde não saiu mais até tornar-se
+                            profissional. Para visualizar mais informações sobre a carreira do astro do futebol Neymar
+                            Jr, clique <a class="link-destaque" href="Novidades/novidades.html">aqui</a>.
+                        </p>
+                    </div>
                 </div>
             </section>
 
+            <!-- PARALLAX 3 -->
             <section class="modulo parallax parallax-3">
+                <div class="particles">
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                </div>
                 <h1 class="area-3">Vida pessoal</h1>
             </section>
 
+            <!-- VIDA PESSOAL -->
             <section class="modulo conteudo">
                 <div class="container">
                     <h2 id="ultimoTitulo" class="sr-texto">Vida pessoal de Neymar Jr</h2>
                     <div class="ultimaParte sr-texto">
-                        
+
                         <div class="card-texto">
                             <p id="ultimoTexto">
                                 No dia 8 de maio de 2011, horas antes da final do Campeonato Paulista daquele ano contra o
@@ -85,9 +157,20 @@
                     </div>
                 </div>
             </section>
+
         </main>
     </div>
 
-    <script src="script.js"></script>
+    <!-- === FOOTER === -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">NJR<span class="gold">.</span></div>
+            <hr class="footer-divider">
+            <p class="footer-text">Fan Page — Neymar da Silva Santos Júnior</p>
+            <p class="footer-text">Desenvolvido com ⚽ e dedicação</p>
+        </div>
+    </footer>
+
+    <script src="script/script.js"></script>
 </body>
 </html>

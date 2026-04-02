@@ -2,67 +2,151 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <meta name="description" content="Novidades e situação atual de Neymar Jr — transmissões, poker, projetos e vida fora das quatro linhas.">
     <link rel="stylesheet" href="../style1.css">
     <script src="https://unpkg.com/scrollreveal"></script>
-    <title>Novidades - Neymar Jr</title>
+    <title>Novidades — Neymar Jr</title>
 </head>
-<body>
-    
-    <header class="navbar">
-        <nav class="nav-links">
-            <a href="../index.html">Apresentação</a>
-            <a href="novidades.html" class="active">Novidades</a>
-            <a href="../Portifolio/portifolio.html">Portfólio</a>
-            <a href="../Detalhes/detalhes.html">Detalhes</a>
-            <a href="../Contato/contato.html">Contato</a>
-        </nav>
+<body class="page-enter">
+
+    <!-- === NAVBAR === -->
+    <header class="navbar" id="navbar">
+        <div class="navbar-inner">
+            <a href="../index.html" class="nav-logo">
+                NJR<span class="logo-accent">.</span>
+            </a>
+            <div class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+                <span></span><span></span><span></span>
+            </div>
+            <nav class="nav-links" id="navLinks">
+                <a href="../index.html">Apresentação</a>
+                <a href="novidades.html" class="active">Novidades</a>
+                <a href="../Portifolio/portifolio.html">Portfólio</a>
+                <a href="../Detalhes/detalhes.html">Detalhes</a>
+                <a href="../Contato/contato.html">Contato</a>
+            </nav>
+        </div>
     </header>
 
+    <!-- === MAIN === -->
     <div class="geral">
         <main>
-            
+
+            <!-- HERO -->
             <section class="modulo parallax" style="background-image: url('../img/novidades/img-1.jpg');">
+                <div class="particles">
+                    <div class="particle"></div><div class="particle"></div><div class="particle"></div>
+                    <div class="particle"></div><div class="particle"></div><div class="particle"></div>
+                </div>
+                <span class="page-badge">📰 Atualizações</span>
                 <h1 class="area-1">Novidades</h1>
+                <div class="scroll-indicator">
+                    <span>Scroll</span>
+                    <div class="arrow"></div>
+                </div>
             </section>
 
+            <!-- SITUAÇÃO ATUAL -->
             <section class="modulo conteudo">
                 <div class="container">
                     <h2 class="sr-texto">Situação atual</h2>
-                    
-                    <div class="card-texto sr-texto">
-                        <p>
-                            Atualmente, Neymar encontra-se em renovação contratual com seu atual time, o Paris Saint-Germain(PSG), sendo um dos destaques da Liga de Futebol Francesa(Ligue 1). Até a atual data(31 de março de 2023), Neymar está com 20 Gols e 9 assistências, sendo um dos maiores "Garçons" da temporada. Neymar já revelou em suas redes sociais que pretende expandir seu "Instituto Projeto Neymar Jr" por mais 7 estados brasileiros, levando o futebol e a alegria para as crianças moradoras de regiões periféricas. O jogador brasileiro começou a embarcar no ramo das transmissões online, fazendo lives na Twitch. Em suas lives, Neymar realiza: apostas esportivas, jogos FPS e análises futebolísticas. Há pouco mais de 2 anos, também tornou-se um grande jogador de Poker, competindo semiprofissionalmente em seu tempo livre.
-                        </p>
+
+                    <div class="content-grid">
+                        <div class="grid-card sr-texto">
+                            <span class="grid-card-icon">⚽</span>
+                            <h3>Em Campo</h3>
+                            <p>
+                                Atualmente, Neymar encontra-se em renovação contratual com seu atual time, o Paris 
+                                Saint-Germain (PSG), sendo um dos destaques da Liga de Futebol Francesa (Ligue 1). 
+                                Até a atual data, Neymar acumula 20 gols e 9 assistências, sendo um dos maiores 
+                                "Garçons" da temporada.
+                            </p>
+                        </div>
+                        <div class="grid-card sr-texto">
+                            <span class="grid-card-icon">🏠</span>
+                            <h3>Instituto Neymar Jr</h3>
+                            <p>
+                                Neymar já revelou em suas redes sociais que pretende expandir seu 
+                                "Instituto Projeto Neymar Jr" por mais 7 estados brasileiros, levando o futebol 
+                                e a alegria para crianças moradoras de regiões periféricas.
+                            </p>
+                        </div>
+                        <div class="grid-card sr-texto">
+                            <span class="grid-card-icon">🎮</span>
+                            <h3>Twitch & Streaming</h3>
+                            <p>
+                                O jogador brasileiro começou a embarcar no ramo das transmissões online, fazendo 
+                                lives na Twitch. Em suas lives, Neymar realiza: apostas esportivas, jogos FPS e 
+                                análises futebolísticas.
+                            </p>
+                        </div>
+                        <div class="grid-card sr-texto">
+                            <span class="grid-card-icon">♠️</span>
+                            <h3>Poker Profissional</h3>
+                            <p>
+                                Há pouco mais de 2 anos, Neymar tornou-se um grande jogador de Poker, 
+                                competindo semiprofissionalmente em seu tempo livre em diversos campeonatos ao 
+                                redor do mundo.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>
 
+            <!-- PARALLAX 2 -->
             <section class="modulo parallax" style="background-image: url('../img/novidades/img-2.jpg');">
+                <div class="particles">
+                    <div class="particle"></div><div class="particle"></div><div class="particle"></div>
+                    <div class="particle"></div><div class="particle"></div><div class="particle"></div>
+                </div>
                 <h1 class="area-2">Extra-campo</h1>
             </section>
 
+            <!-- FORA DAS 4 LINHAS -->
             <section class="modulo conteudo">
                 <div class="container">
                     <h2 class="sr-texto">Fora das quatro linhas</h2>
-                    
                     <div class="card-texto sr-texto">
                         <p>
-                            Fora das 4 linhas, Neymar passa seu tempo livre com seu filho Davi, de 11 anos, além de realizar lives na Twitch (site de transmissões ao vivo), onde joga jogos como: CS GO, Valorant e FIFA. Neymar também entrou recentemente no mundo das apostas esportivas, onde também faz transmissões ao vivo ensinando jovens a apostar de forma consciente. O jogador já chegou a faturar 10 milhões de reais nesse ramo. Neymar também é um apreciador de Poker, jogo de cartas muito popular na Europa, chegando até mesmo a competir semiprofissionalmente em campeonatos amadores. Recentemente, Neymar estrelou um documentário no serviço de Streaming Netflix, intitulado "Caos Perfeito", onde mostra o dia a dia do jogador. O documentário tornou-se o segundo mais visto da história do Streaming e mostrou o fenômeno midiático que é o jogador brasileiro.
+                            Fora das 4 linhas, Neymar passa seu tempo livre com seu filho Davi, de 11 anos, além de 
+                            realizar lives na Twitch (site de transmissões ao vivo), onde joga jogos como: CS GO, 
+                            Valorant e FIFA. Neymar também entrou recentemente no mundo das apostas esportivas, 
+                            onde também faz transmissões ao vivo ensinando jovens a apostar de forma consciente. O 
+                            jogador já chegou a faturar 10 milhões de reais nesse ramo.
+                        </p>
+                        <p>
+                            Neymar também é um apreciador de Poker, jogo de cartas muito popular na Europa, 
+                            chegando até mesmo a competir semiprofissionalmente em campeonatos amadores. 
+                            Recentemente, Neymar estrelou um documentário no serviço de Streaming Netflix, 
+                            intitulado "Caos Perfeito", onde mostra o dia a dia do jogador. O documentário 
+                            tornou-se o segundo mais visto da história do Streaming e mostrou o fenômeno midiático 
+                            que é o jogador brasileiro.
                         </p>
                     </div>
                 </div>
             </section>
 
-            <section class="modulo parallax" style="background-image: url('../img/novidades/img-3.jpg');">
-                <h1 class="area-3"></h1>
+            <!-- PARALLAX 3 (VISUAL) -->
+            <section class="modulo parallax" style="background-image: url('../img/novidades/img-3.jpg'); min-height: 50vh;">
+                <div class="particles">
+                    <div class="particle"></div><div class="particle"></div><div class="particle"></div>
+                    <div class="particle"></div><div class="particle"></div><div class="particle"></div>
+                </div>
             </section>
 
         </main>
     </div>
-    
+
+    <!-- === FOOTER === -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">NJR<span class="gold">.</span></div>
+            <hr class="footer-divider">
+            <p class="footer-text">Fan Page — Neymar da Silva Santos Júnior</p>
+        </div>
+    </footer>
+
     <script src="../script/script.js"></script>
 </body>
 </html>

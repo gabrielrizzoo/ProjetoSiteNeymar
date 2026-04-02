@@ -2,77 +2,189 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <meta name="description" content="Detalhes da carreira de Neymar Jr — dos primeiros passos no Santos à Europa e Seleção Brasileira.">
     <link rel="stylesheet" href="../style1.css"/>
     <script src="https://unpkg.com/scrollreveal"></script>
-    <title>Detalhes - Neymar Jr</title>
+    <title>Detalhes — Neymar Jr</title>
 </head>
-<body>
-    
-    <header class="navbar">
-        <nav class="nav-links">
-            <a href="../index.html">Apresentação</a>
-            <a href="../Novidades/novidades.html">Novidades</a>
-            <a href="../Portifolio/portifolio.html">Portfólio</a>
-            <a href="detalhes.html" class="active">Detalhes</a>
-            <a href="../Contato/contato.html">Contato</a>
-        </nav>
+<body class="page-enter">
+
+    <!-- === NAVBAR === -->
+    <header class="navbar" id="navbar">
+        <div class="navbar-inner">
+            <a href="../index.html" class="nav-logo">
+                NJR<span class="logo-accent">.</span>
+            </a>
+            <div class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+                <span></span><span></span><span></span>
+            </div>
+            <nav class="nav-links" id="navLinks">
+                <a href="../index.html">Apresentação</a>
+                <a href="../Novidades/novidades.html">Novidades</a>
+                <a href="../Portifolio/portifolio.html">Portfólio</a>
+                <a href="detalhes.html" class="active">Detalhes</a>
+                <a href="../Contato/contato.html">Contato</a>
+            </nav>
+        </div>
     </header>
-    
+
+    <!-- === MAIN === -->
     <div class="geral">
         <main>
+
+            <!-- HERO -->
             <section class="modulo parallax" style="background-image: url('../img/detalhes/image1-Detalhes.png');">
+                <div class="particles">
+                    <div class="particle"></div><div class="particle"></div><div class="particle"></div>
+                    <div class="particle"></div><div class="particle"></div><div class="particle"></div>
+                </div>
+                <span class="page-badge">📋 Trajetória</span>
                 <h1 class="area-1">Detalhes</h1>
+                <div class="scroll-indicator">
+                    <span>Scroll</span>
+                    <div class="arrow"></div>
+                </div>
             </section>
 
+            <!-- SEU COMEÇO — TIMELINE -->
             <section class="modulo conteudo">
                 <div class="container">
                     <h2 class="sr-texto">Seu começo...</h2>
-                    
-                    <div class="card-texto sr-texto">
-                        <p>
-                            Neymar da Silva Santos Júnior, mais conhecido como Neymar ou Neymar Jr, nasceu no dia 5 de fevereiro de 1992 em Mogi das Cruzes – SP, na região metropolitana de São Paulo. Ele acabou herdando o nome de seu pai, que era o mecânico Neymar da Silva Santos, já sua mãe, Nadine Santos. Em sua juventude, Neymar se mudou para São Vicente. Posteriormente, foi para Santos, atuando nas categorias de base do Santos Futebol Clube ainda com 11 anos. A família do jogador ainda vivia uma vida humilde nessa época, já que Neymar ainda não ganhava dinheiro suficiente para sustentá-los. Com o avanço da carreira de Neymar, que se tornava cada vez mais promissora, a família comprou uma casa perto da Vila Belmiro e começou então a ascender socialmente. Estreando profissionalmente pelo Santos no fim de 2009. Neymar destacou-se de vez em 2010, sendo considerado um dos melhores jogadores do Campeonato brasileiro daquele ano. Em 2011, consolidou-se como o melhor jogador da equipe, conquistando a Copa Libertadores, a mais importante da América do Sul, além de mostrar seu talento para todo o mundo no Mundial Interclubes, a maior e mais importante competição entre clubes.
-                        </p>
+
+                    <div class="timeline">
+                        <div class="timeline-item card-texto sr-texto">
+                            <span class="timeline-year">1992 — Nascimento</span>
+                            <p>
+                                Neymar da Silva Santos Júnior nasceu no dia 5 de fevereiro de 1992 em Mogi das 
+                                Cruzes – SP, na região metropolitana de São Paulo. Herdou o nome de seu pai, o 
+                                mecânico Neymar da Silva Santos. Sua mãe é Nadine Santos. Em sua juventude, 
+                                mudou-se para São Vicente e posteriormente para Santos.
+                            </p>
+                        </div>
+                        <div class="timeline-item card-texto sr-texto">
+                            <span class="timeline-year">2003 — Categorias de Base</span>
+                            <p>
+                                Com apenas 11 anos, chegou às categorias de base do Santos Futebol Clube. A 
+                                família ainda vivia uma vida humilde nessa época, já que Neymar ainda não ganhava 
+                                dinheiro suficiente para sustentá-los.
+                            </p>
+                        </div>
+                        <div class="timeline-item card-texto sr-texto">
+                            <span class="timeline-year">2009 — Estreia Profissional</span>
+                            <p>
+                                Estreando profissionalmente pelo Santos no fim de 2009, Neymar destacou-se de vez 
+                                em 2010, sendo considerado um dos melhores jogadores do Campeonato Brasileiro 
+                                daquele ano. A família comprou uma casa perto da Vila Belmiro e começou a ascender 
+                                socialmente.
+                            </p>
+                        </div>
+                        <div class="timeline-item card-texto sr-texto">
+                            <span class="timeline-year">2011 — Libertadores & Glória</span>
+                            <p>
+                                Em 2011, consolidou-se como o melhor jogador da equipe, conquistando a Copa 
+                                Libertadores, a mais importante da América do Sul, além de mostrar seu talento 
+                                para todo o mundo no Mundial Interclubes, a maior e mais importante competição 
+                                entre clubes.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>
 
+            <!-- PARALLAX 2 -->
             <section class="modulo parallax" style="background-image: url('../img/detalhes/image2-Detalhes.png');">
+                <div class="particles">
+                    <div class="particle"></div><div class="particle"></div><div class="particle"></div>
+                    <div class="particle"></div><div class="particle"></div><div class="particle"></div>
+                </div>
                 <h1 class="area-2">Futebol Europeu</h1>
             </section>
 
+            <!-- TRANSFERÊNCIA -->
             <section class="modulo conteudo">
                 <div class="container">
                     <h2 class="sr-texto">Transferência</h2>
-                    
-                    <div class="card-texto sr-texto">
-                        <p>
-                            Em 2014, Neymar acertou sua trânsferencia para o futebol espanhol, onde passou a atuar pelo Barcelona. Em sua apresentação oficial, no dia 3 de junho de 2014, o jogador foi recepcionado no Camp Nou por 56 mil torcedores. Neymar passou quatro anos no Barcelona, realizou 186 jogos oficiais, fez 105 gols e ganhou oito títulos. Permaneceu no Barcelona até julho de 2017. No dia 2 de agosto de 2017, o Barcelona anunciou a saída de Neymar do clube. No Barcelona, Neymar fez parte de um dos trios mais memoráveis da história do Futebol, o MSN (Messi, Suarez, Neymar). Barcelona acertou a transferência de Neymar para o futebol francês e então Neymar foi apresentado aos torcedores do PSG no dia 4 de agosto de 2017, no estádio Parc des Princes, em Paris. O contrato assinado é de vínculo com o clube até junho de 2027. O PSG pagou uma multa rescisória no valor de 222 milhões de euros (821,4 milhões de reais), tornando Neymar o jogador mais caro até aquele momento.
-                        </p>
+
+                    <div class="timeline">
+                        <div class="timeline-item card-texto sr-texto">
+                            <span class="timeline-year">2014 — FC Barcelona</span>
+                            <p>
+                                Em 2014, Neymar acertou sua transferência para o futebol espanhol, onde passou a 
+                                atuar pelo Barcelona. Em sua apresentação oficial, no dia 3 de junho de 2014, o 
+                                jogador foi recepcionado no Camp Nou por 56 mil torcedores. Neymar passou quatro 
+                                anos no Barcelona, realizou 186 jogos oficiais, fez 105 gols e ganhou oito títulos. 
+                                No Barcelona, fez parte de um dos trios mais memoráveis da história do Futebol, o 
+                                MSN (Messi, Suárez, Neymar).
+                            </p>
+                        </div>
+                        <div class="timeline-item card-texto sr-texto">
+                            <span class="timeline-year">2017 — Paris Saint-Germain</span>
+                            <p>
+                                No dia 2 de agosto de 2017, o Barcelona anunciou a saída de Neymar do clube. O 
+                                craque foi apresentado aos torcedores do PSG no dia 4 de agosto de 2017, no 
+                                estádio Parc des Princes, em Paris. O PSG pagou uma multa rescisória no valor de 
+                                222 milhões de euros (821,4 milhões de reais), tornando Neymar o jogador mais 
+                                caro até aquele momento.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>
 
+            <!-- PARALLAX 3 -->
             <section class="modulo parallax" style="background-image: url('../img/detalhes/image3-Detalhes.png');">
+                <div class="particles">
+                    <div class="particle"></div><div class="particle"></div><div class="particle"></div>
+                    <div class="particle"></div><div class="particle"></div><div class="particle"></div>
+                </div>
                 <h1 class="area-3">Figurinha Carimbada</h1>
             </section>
 
+            <!-- SELEÇÃO BRASILEIRA -->
             <section class="modulo conteudo">
                 <div class="container">
-                    <h2 class="sr-texto">Sua passagem pela seleção brasileira</h2>
-                    
+                    <h2 class="sr-texto">Sua passagem pela Seleção Brasileira</h2>
+
                     <div class="card-texto sr-texto">
                         <p>
-                            Pela seleção brasileira, Neymar foi convocado pela primeira vez em 26 de Julho de 2011 e desde então tornou-se "figurinha" carimbada em quase todas as convocações, sendo o principal jogador da Canarinho, além de ter disputador 2 copas do mundo (2018 e 2022). Com o uniforme da Seleção, Neymar possui 77 gols, empatado com o Rei Pelé, além de 57 assistências.
+                            Pela seleção brasileira, Neymar foi convocado pela primeira vez em 26 de Julho de 
+                            2011 e desde então tornou-se "figurinha" carimbada em quase todas as convocações, 
+                            sendo o principal jogador da Canarinho, além de ter disputado 2 copas do mundo 
+                            (2018 e 2022). Com o uniforme da Seleção, Neymar possui 77 gols, empatado com o 
+                            Rei Pelé, além de 57 assistências.
                         </p>
+                    </div>
+
+                    <!-- Stats -->
+                    <div class="stats-bar mt-lg">
+                        <div class="stat-item sr-texto">
+                            <span class="stat-number">77</span>
+                            <span class="stat-label">Gols</span>
+                        </div>
+                        <div class="stat-item sr-texto">
+                            <span class="stat-number">57</span>
+                            <span class="stat-label">Assistências</span>
+                        </div>
+                        <div class="stat-item sr-texto">
+                            <span class="stat-number">2</span>
+                            <span class="stat-label">Copas do Mundo</span>
+                        </div>
                     </div>
                 </div>
             </section>
 
         </main>
     </div>
+
+    <!-- === FOOTER === -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">NJR<span class="gold">.</span></div>
+            <hr class="footer-divider">
+            <p class="footer-text">Fan Page — Neymar da Silva Santos Júnior</p>
+        </div>
+    </footer>
 
     <script src="../script/script.js"></script>
 </body>

@@ -2,57 +2,112 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <meta name="description" content="Contato e redes sociais oficiais de Neymar Jr — Instagram, YouTube, Twitch, Twitter e mais.">
     <link rel="stylesheet" href="../style1.css" />
-    <link rel="shortcut icon" href="img/favicon/faviconCBF2.png" type="image/x-icon">
     <script src="https://unpkg.com/scrollreveal"></script>
-    <title>Contacto - Neymar Jr</title>
+    <title>Contato — Neymar Jr</title>
 </head>
-<body>
+<body class="page-enter">
 
-    <header class="navbar">
-        <nav class="nav-links">
-            <a href="../index.html">Apresentação</a>
-            <a href="../Novidades/novidades.html">Novidades</a>
-            <a href="../Portifolio/portifolio.html">Portefólio</a>
-            <a href="../Detalhes/detalhes.html">Detalhes</a>
-            <a href="contato.html" class="active">Contato</a>
-        </nav>
+    <!-- === NAVBAR === -->
+    <header class="navbar" id="navbar">
+        <div class="navbar-inner">
+            <a href="../index.html" class="nav-logo">
+                NJR<span class="logo-accent">.</span>
+            </a>
+            <div class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+                <span></span><span></span><span></span>
+            </div>
+            <nav class="nav-links" id="navLinks">
+                <a href="../index.html">Apresentação</a>
+                <a href="../Novidades/novidades.html">Novidades</a>
+                <a href="../Portifolio/portifolio.html">Portfólio</a>
+                <a href="../Detalhes/detalhes.html">Detalhes</a>
+                <a href="contato.html" class="active">Contato</a>
+            </nav>
+        </div>
     </header>
 
+    <!-- === MAIN === -->
     <div class="geral">
         <main>
 
+            <!-- HERO -->
             <section class="modulo parallax" style="background-image: url('../img/contato/img-1.jpg');">
+                <div class="particles">
+                    <div class="particle"></div><div class="particle"></div><div class="particle"></div>
+                    <div class="particle"></div><div class="particle"></div><div class="particle"></div>
+                </div>
+                <span class="page-badge">📬 Conecte-se</span>
                 <h1 class="area-1">Contato</h1>
+                <div class="scroll-indicator">
+                    <span>Scroll</span>
+                    <div class="arrow"></div>
+                </div>
             </section>
 
+            <!-- REDES SOCIAIS -->
             <section class="modulo conteudo">
                 <div class="container">
-                    <h2 class="sr-texto">Redes sociais para contacto</h2>
-                    
+                    <h2 class="sr-texto">Redes sociais para contato</h2>
+
                     <div class="card-texto sr-texto">
-                        <p>Acompanhe o dia a dia, novidades, transmissões e anúncios oficiais do Neymar Jr. através das plataformas abaixo:</p>
-                        
-                        <div class="redes-sociais">
-                            <a href="https://www.instagram.com/neymarjr/" target="_blank" class="social-btn">Instagram</a>
-                            <a href="https://www.youtube.com/user/neymarjr" target="_blank" class="social-btn">YouTube</a>
-                            <a href="https://www.twitch.tv/neymarjr" target="_blank" class="social-btn">Twitch</a>
-                            <a href="https://steamcommunity.com/profiles/76561198355549311" target="_blank" class="social-btn">Steam</a>
-                            <a href="https://twitter.com/neymarjr" target="_blank" class="social-btn">Twitter</a>
+                        <p>
+                            Acompanhe o dia a dia, novidades, transmissões e anúncios oficiais do Neymar Jr. 
+                            através das plataformas abaixo:
+                        </p>
+
+                        <div class="content-grid mt-lg">
+                            <a href="https://www.instagram.com/neymarjr/" target="_blank" class="grid-card" id="social-instagram">
+                                <span class="grid-card-icon">📸</span>
+                                <h3>Instagram</h3>
+                                <p>Fotos, stories e bastidores do dia a dia.</p>
+                            </a>
+                            <a href="https://www.youtube.com/user/neymarjr" target="_blank" class="grid-card" id="social-youtube">
+                                <span class="grid-card-icon">🎬</span>
+                                <h3>YouTube</h3>
+                                <p>Vídeos oficiais, bastidores e vlogs exclusivos.</p>
+                            </a>
+                            <a href="https://www.twitch.tv/neymarjr" target="_blank" class="grid-card" id="social-twitch">
+                                <span class="grid-card-icon">🎮</span>
+                                <h3>Twitch</h3>
+                                <p>Lives de games, poker e apostas esportivas.</p>
+                            </a>
+                            <a href="https://steamcommunity.com/profiles/76561198355549311" target="_blank" class="grid-card" id="social-steam">
+                                <span class="grid-card-icon">🕹️</span>
+                                <h3>Steam</h3>
+                                <p>Perfil gamer oficial do craque brasileiro.</p>
+                            </a>
+                            <a href="https://twitter.com/neymarjr" target="_blank" class="grid-card" id="social-twitter">
+                                <span class="grid-card-icon">🐦</span>
+                                <h3>Twitter / X</h3>
+                                <p>Opiniões, interações e repercussão em tempo real.</p>
+                            </a>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="modulo parallax" style="background-image: url('../img/contato/img-3.jpg');">
-                <h1 class="area-2"></h1>
+            <!-- PARALLAX FINAL (VISUAL) -->
+            <section class="modulo parallax" style="background-image: url('../img/contato/img-3.jpg'); min-height: 60vh;">
+                <div class="particles">
+                    <div class="particle"></div><div class="particle"></div><div class="particle"></div>
+                    <div class="particle"></div><div class="particle"></div><div class="particle"></div>
+                </div>
             </section>
 
         </main>
     </div>
+
+    <!-- === FOOTER === -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">NJR<span class="gold">.</span></div>
+            <hr class="footer-divider">
+            <p class="footer-text">Fan Page — Neymar da Silva Santos Júnior</p>
+        </div>
+    </footer>
 
     <script src="../script/script.js"></script>
 </body>
